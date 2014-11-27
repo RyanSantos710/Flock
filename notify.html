@@ -5,19 +5,26 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div ng-controller="TodoController">
-    <form ng-submit="addTodo()">
-        <input type="text" ng-model="todoText"  size="30"
-               placeholder="add new todo here">
+<div ng-controller="NameController">
+
+
+
+    <form ng-submit="addName()">
+        <textarea ng-model="nameText" ng-trim="false" maxlength="140"
+                  size="30"placeholder="add new name here"></textarea>
         <input class="btn-primary" type="submit" value="add">
+        <span>{{140 - text.length}} left</span>
     </form>
-    {{todoText}}
-    <ul class="unstyled">
-        <li ng-repeat="todo in todos">
-            < ng-model="todo.text">
-            <span class="{{todo.done}}">{{todo.text}}</span>
+    <div>
+        {{  nameText }}
+    </div>
+    <ul ng-repeat="name in names" class="unstyled">
+        <li >
+
+            <span>{{name.text}}</span>
         </li>
     </ul>
+
 
 </div>
 

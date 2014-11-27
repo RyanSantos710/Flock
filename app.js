@@ -2,29 +2,29 @@
  * Created by phillipwright on 11/26/14.
  */
 angular.module('myApp', [])
-    .controller('TodoController', ['$scope', function($scope) {
-        $scope.todos = [
-            {text:'learn angular', done:true},
-            {text:'build an angular app', done:false}];
+    .controller('NameController', ['$scope', function($scope) {
+        $scope.names = [
+            {text:'?**?', done:true},
+            {text:'(#)|(#)', done:false}];
 
-        $scope.addTodo = function() {
-            $scope.todos.push({text:$scope.todoText, done:false});
-            $scope.todoText = '';
+        $scope.addName = function() {
+            $scope.names.push({text:$scope.nameText, done:false});
+            $scope.nameText = '';
         };
 
         $scope.remaining = function() {
             var count = 0;
-            angular.forEach($scope.todos, function(todo) {
-                count += todo.done ? 0 : 1;
+            angular.forEach($scope.names, function(name) {
+                count += name.done ? 0 : 1;
             });
             return count;
         };
 
         $scope.archive = function() {
-            var oldTodos = $scope.todos;
-            $scope.todos = [];
-            angular.forEach(oldTodos, function(todo) {
-                if (!todo.done) $scope.todos.push(todo);
+            var oldnames = $scope.names;
+            $scope.names = [];
+            angular.forEach(oldNames, function(name) {
+                if (!name.done) $scope.names.push(name);
             });
         };
     }]);
