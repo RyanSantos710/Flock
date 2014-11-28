@@ -55,6 +55,30 @@ module.exports = function(app, passport) {
   });
 
   // =====================================
+  // PROFILE-TWEET SECTION ===============
+  // =====================================    
+  app.post('/', function(req, res) {
+    var tweet = req.body.username;
+    var configAuth = require('../config/auth');
+    var user = req.user;
+    var Twit = require('twit')
+
+    var T = new Twit({
+    consumer_key:         configAuth.twitterAuth.consumerKey 
+  , consumer_secret:      configAuth.twitterAuth.consumerSecret  
+  , access_token:         user.twitter.token
+  , access_token_secret:  user.twitter.token_secret
+    })
+    
+    console.log(T);
+    /* TO PREVENT SPAM WHILE TESTING
+    T.post('statuses/update', { status: tweet }, function(err, data, response) {
+    })
+    */
+    res.redirect('/profile');
+  });
+
+  // =====================================
   // LOGOUT ==============================
   // =====================================
   app.get('/logout', function(req, res) {
@@ -87,5 +111,3 @@ function isLoggedIn(req, res, next) {
   // if they aren't redirect them to the home page
   res.redirect('/');
 }
-
-
