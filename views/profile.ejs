@@ -1,0 +1,72 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+  <title>Node Authentication</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+  <style>
+    body        { padding-top:80px; word-wrap:break-word; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header text-center">
+    <h1><span class="fa fa-twitter"></span> Welcome to Flock!</h1>
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <form accept-charset="UTF-8" method="post">
+  <div style="margin:0;padding:0">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
+  </div>
+        <div class="form-group col-md-6 col-md-offset-3">
+            <label for="tweetBox">Tweet below!</label>
+            <textarea class="form-control" rows="7" name="tweet_out" placeholder="140 characters only!"></textarea>
+            <button type="submit" value="tweetOut" class="btn btn-primary"><i class="fa fa-twitter">Tweet!</i></button>
+        </div>
+</form>
+  </div>
+  </div>      
+      
+  <div class="row">
+    <!-- LOCAL INFORMATION -->
+    <div class="col-sm-6">
+      <div class="well">
+        <h3><span class="fa fa-user"></span> Local</h3>
+
+        <p>
+          <strong>id</strong>: <%= user._id %><br>
+          <strong>email</strong>: <%= user.local.email %><br>
+          <strong>password</strong>: <%= user.local.password %>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <!-- TWITTER INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well">
+            <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
+                <p>
+                    <strong>id</strong>: <%= user.twitter.id %><br>
+                    <strong>token</strong>: <%= user.twitter.token %><br>
+                    <strong>tokenSecret</strong>: <%= user.twitter.token_secret %><br>
+                    <strong>username</strong>: <%= user.twitter.username %><br>
+                    <strong>displayName</strong>: <%= user.twitter.displayName %>
+                </p>
+        </div>
+     </div>
+  </div>
+</div>
+    <script src="../twitter.js"></script>
+</body>
+</html>
