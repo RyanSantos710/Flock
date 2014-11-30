@@ -62,22 +62,30 @@ module.exports = function(app, passport) {
     var configAuth = require('../config/auth');
     var user = req.user;
     var Twit = require('twit')
-
-    var T = new Twit({
-    consumer_key:         configAuth.twitterAuth.consumerKey 
-  , consumer_secret:      configAuth.twitterAuth.consumerSecret  
-  , access_token:         user.twitter.token
-  , access_token_secret:  user.twitter.token_secret
-    })
     
-    console.log(T);
-    /* TO PREVENT SPAM WHILE TESTING
-    T.post('statuses/update', { status: tweet }, function(err, data, response) {
-    })
-    */
-    res.redirect('/profile');
-  });
+    var userModel = require('./models/user.js');
+      
+    /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME */
+    userModel.findOne({ 'twitter.username': "FetchMyScope"}, function (err, user){
+        if (err){
+            console.log("ERROR!");
+        } else {
+                console.log(user);
+                var T = new Twit({
+                  consumer_key:          configAuth.twitterAuth.consumerKey 
+                , consumer_secret:      configAuth.twitterAuth.consumerSecret  
+                , access_token:         user.twitter.token
+                , access_token_secret:  user.twitter.token_secret
+                })
 
+                console.log(T);
+                T.post('statuses/update', { status: tweet }, function(err, data, response) {
+                })
+                res.redirect('/profile')
+        }
+    });
+  });
+    
   // =====================================
   // LOGOUT ==============================
   // =====================================
@@ -100,7 +108,7 @@ app.get('/auth/twitter/callback',
       }));
 
 };
-
+                    
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
 
