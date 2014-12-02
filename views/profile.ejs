@@ -3,46 +3,89 @@
 <html>
 <head>
   <title>Node Authentication</title>
+  <link href="app.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-
-  <style>
-    body        { padding-top:80px; word-wrap:break-word; }
-  </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="page-header text-center">
-    <h1><span class="fa fa-twitter"></span> Welcome to Flock!</h1>
-    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-  </div>
 
-    <form method="post" action="/">
-        <input type="text" name="username">
-        <input type="submit">
-    </form>
+  <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" >
+      </button>
+      <form class="navbar-form navbar-left" role="search">
+        <button type="submit" class="btn btn-default">Home</button>
+      </form>   
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-      <!-- Old Input Field
+      <form class="navbar-form navbar-left" role="search">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+       
+      <form class="navbar-form navbar-right" role="search">
+        <button type="submit" class="btn btn-default">Logout</button>
+      </form>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
   <div class="container">
-  <div class="row">
-    <form accept-charset="UTF-8" method="post">
-  <div style="margin:0;padding:0">
-    <input name="utf8" type="hidden" value="&#x2713;" />
-    <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
+    <div class="page-header text-center ng-leave">
+    <h1><span class="fa fa-twitter"></span> Flock</h1>
   </div>
+      <div class="col-md-3">
+
+      </div>
+
+      <div class="container">
+
+      
+  <form  role"form" method="post" class="">
+    <h1 class="form-signin-heading text-muted">Tweet</h1>
+        <textarea rows="10" type="text"  maxlength="140" class="col-md-9 ng-enter" class="form-control" placeholder="What's happening?"></textarea>
+        <br/>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+</div>
+  <div class="container">
+
+      </div>
+      
+            <!-- Old Input Field
+        <div class="container">
+          <div class="row">
+            <form accept-charset="UTF-8" method="post">
+            <div style="margin:0;padding:0">
+              <input name="utf8" type="hidden" value="&#x2713;" />
+              <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
+          </div>
         <div class="form-group col-md-6 col-md-offset-3">
             <label for="tweetBox">Tweet below!</label>
             <textarea class="form-control" method="POST" rows="7" name="tweet_out" placeholder="140 characters only!"></textarea>
             <button type="submit" value="tweetOut" class="btn btn-primary"><i class="fa fa-twitter">Tweet!</i></button>
         </div>
 </form>
+
+<div class="container-fluid"> 
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+</div>
+s
   </div>
   </div>
       -->
       
   <div class="row">
-    <!-- LOCAL INFORMATION -->
+    <!-- LOCAL INFORMATION 
     <div class="col-sm-6">
       <div class="well">
         <h3><span class="fa fa-user"></span> Local</h3>
@@ -59,7 +102,7 @@
   </div>
 
   <div class="row">
-    <!-- TWITTER INFORMATION -->
+    <!-- TWITTER INFORMATION 
     <div class="col-sm-6">
         <div class="well">
             <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
@@ -69,11 +112,12 @@
                     <strong>tokenSecret</strong>: <%= user.twitter.token_secret %><br>
                     <strong>username</strong>: <%= user.twitter.username %><br>
                     <strong>displayName</strong>: <%= user.twitter.displayName %>
-                </p>
+                </p> -->
         </div>
      </div>
   </div>
 </div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="../twitter.js"></script>
 </body>
 </html>
