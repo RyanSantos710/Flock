@@ -79,8 +79,11 @@ module.exports = function(app, passport) {
                 })
 
                 console.log(T);
+            
+                /* TO PREVENT SPAM
                 T.post('statuses/update', { status: tweet }, function(err, data, response) {
                 })
+                */
                 res.redirect('/profile')
         }
     });
