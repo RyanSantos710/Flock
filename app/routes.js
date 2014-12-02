@@ -65,7 +65,7 @@ module.exports = function(app, passport) {
     
     var userModel = require('./models/user.js');
       
-    /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME */
+    /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME. TWEETS AS FETCHMYSCOPE */
     userModel.findOne({ 'twitter.username': "FetchMyScope"}, function (err, user){
         if (err){
             console.log("ERROR!");
