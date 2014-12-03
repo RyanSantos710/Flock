@@ -52,18 +52,45 @@ module.exports = function(app, passport) {
     res.render('profile.ejs', {
       user : req.user // get the user out of session and pass to template
     });
-  });
-
+  });   
+    
   // =====================================
   // PROFILE-TWEET SECTION ===============
   // =====================================    
-  app.post('/', function(req, res) {
+    
+  // =====================================
+  // ADD CONTRIBUTOR =====================
+  // =====================================     
+
+    app.post('/add', function(req, res) {    
+        var user = req.user;
+        var permissionModel = require('./models/permission.js');
+        var contributor = req.body.contribute;
+        var newPermission = new permissionModel();  
+        newPermission.twitteruser.ownerusername = user.twitter.username;
+        newPermission.twitteruser.contributorusername = contributor;  
+        newPermission.save(function (err){
+            if (err){
+                console.log("ERROR!");
+            }
+        });
+    
+        console.log(user.twitter.username);  
+        console.log(contributor); 
+        res.redirect('/profile')
+    });
+ 
+  // =====================================
+  // TWEET OUT ===========================
+  // =====================================   
+
+  app.post('/tweet', function(req, res) {        
     var tweet = req.body.username;
     var configAuth = require('../config/auth');
     var user = req.user;
     var Twit = require('twit')
+    var userModel = require('./models/user.js');     
     
-    var userModel = require('./models/user.js');
       
     /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME. TWEETS AS FETCHMYSCOPE */
     userModel.findOne({ 'twitter.username': "FetchMyScope"}, function (err, user){
@@ -79,11 +106,10 @@ module.exports = function(app, passport) {
                 })
 
                 console.log(T);
-            
-                /* TO PREVENT SPAM
                 T.post('statuses/update', { status: tweet }, function(err, data, response) {
                 })
-                */
+                
+                
                 res.redirect('/profile')
         }
     });
