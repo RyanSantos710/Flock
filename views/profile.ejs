@@ -19,13 +19,13 @@
   </div>
 
     <form method="post" action="/tweet">
-        <input type="text" name="username">
-        <input type="submit" value="Tweet!">
+        <textarea class="form-control" rows="5" name="username"></textarea>
+        <button type="submit" class="btn btn-primary registerButton">Tweet!</button>
     </form>
       
     <form method="post" action="/add">
-        <input type="text" name="contribute">
-        <input type="submit" value="Add Contributor!">
+        <input type="text" class="form-control" placeholder="Text input" name="contribute">
+        <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
     </form>  
       
   <div class="row">
