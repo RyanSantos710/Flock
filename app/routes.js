@@ -91,7 +91,8 @@ module.exports = function(app, passport) {
     var user = req.user;
     var Twit = require('twit')
     var userModel = require('./models/user.js');
-    var permissionCheck = require('./models/permission.js');
+    var permissionCheck = require('./models/permission.js'); 
+    var dialog = require('dialog');
       
   // =====================================
   // CONTRIBUTOR CHECK ===================
@@ -100,26 +101,28 @@ module.exports = function(app, passport) {
         'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
         'twitteruser.ownerusername': tweet_as_username 
         }, function (err, permission){
+          console.log(permission);  
             if (err){
+                dialog.info('ERROR! PERMISSION DENIED!');
                 console.log("ERROR! PERMISSION DENIED!");
-            } else {                    
+                res.redirect('/profile');
+            } else if (permission == null){
+                dialog.info('ERROR! PERMISSION DENIED!');
+                console.log("ERROR! PERMISSION DENIED!");
+                res.redirect('/profile');
+            } else {
+                dialog.info('Tweet successful!');
                 console.log("You have permission!");
-                console.log(tweet_as_username);
-                console.log(user.twitter.username);
                 // =====================================
                 // TWEET OUT ===========================
                 // =====================================         
       
-                /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME. TWEETS AS FETCHMYSCOPE */
-                
-                
-                // TWEET_AS_USERNAME WILL TWEET BECUSE CASE SENSITIVE. MUST CHANGE THE FETCHMYTWEET IN MONGO TO CONTINUE TESTING
+                /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET.*/
                 
                 userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
                 if (err){
                     console.log("ERROR!");
                 } else {
-                    console.log(user);
                     var T = new Twit({
                   consumer_key:          configAuth.twitterAuth.consumerKey 
                 ,  consumer_secret:         configAuth.twitterAuth.consumerSecret  
@@ -127,12 +130,11 @@ module.exports = function(app, passport) {
                 , access_token_secret:  user.twitter.token_secret
                 })
 
-                /* REMOVE COMMENT TO TWEET OUT - PLACED TO PREVENT SPAM
-                console.log(T);
+                // COMMENT THIS OUT IF TESTING TO PREVENT TWEET SPAM
+                /*    
                 T.post('statuses/update', { status: tweet }, function(err, data, response) {
                 })
                 */
-                
                 res.redirect('/profile')
                 }
             });                

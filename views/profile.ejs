@@ -14,9 +14,9 @@
 <body>
   <div class="container">
     <div class="page-header text-center">
-    <h1><span class="fa fa-twitter"></span> Welcome to Flock!</h1>
-    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-  </div>
+        <h1><span class="fa fa-twitter"></span> Welcome to Flock!</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>      
 
     <form method="post" action="/tweet">
         <input type="text" class="form-control" placeholder="Tweet as Who?" name="tweet_as_username">
@@ -28,39 +28,6 @@
         <input type="text" class="form-control" placeholder="Text input" name="contributor">
         <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
     </form>  
-      
-  <div class="row">
-    <!-- LOCAL INFORMATION -->
-    <div class="col-sm-6">
-      <div class="well">
-        <h3><span class="fa fa-user"></span> Local</h3>
-
-        <p>
-          <strong>id</strong>: <%= user._id %><br>
-          <strong>email</strong>: <%= user.local.email %><br>
-          <strong>password</strong>: <%= user.local.password %>
-        </p>
-
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row">
-    <!-- TWITTER INFORMATION -->
-    <div class="col-sm-6">
-        <div class="well">
-            <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
-                <p>
-                    <strong>id</strong>: <%= user.twitter.id %><br>
-                    <strong>token</strong>: <%= user.twitter.token %><br>
-                    <strong>tokenSecret</strong>: <%= user.twitter.token_secret %><br>
-                    <strong>username</strong>: <%= user.twitter.username %><br>
-                    <strong>displayName</strong>: <%= user.twitter.displayName %>
-                </p>
-        </div>
-     </div>
-  </div>
 </div>
 </body>
 </html>
