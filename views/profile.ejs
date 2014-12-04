@@ -14,10 +14,9 @@
 <body>
   <div class="container">
     <div class="page-header text-center">
-        <h1><span class="fa fa-twitter"></span> Welcome to Flock!</h1>
+        <h1><span class="fa fa-twitter"></span> Welcome to Flock, <%=user.twitter.displayName %>!</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>      
-
     <form method="post" action="/tweet">
         <input type="text" class="form-control" placeholder="Tweet as Who?" name="tweet_as_username">
         <textarea class="form-control" rows="5" name="tweet" placeholder="Tweet out! (140 character max)"></textarea>
