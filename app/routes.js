@@ -9,41 +9,6 @@ module.exports = function(app, passport) {
   });
 
   // =====================================
-  // LOGIN ===============================
-  // =====================================
-  // show the login form
-  app.get('/login', function(req, res) {
-
-    // render the page and pass in any flash data if it exists
-    res.render('login.ejs', { message: req.flash('loginMessage') }); 
-  });
-
-  // process the login form
-  app.post('/login', passport.authenticate('local-login', {
-    successRedirect : '/profile', // redirect to the secure profile section
-    failureRedirect : '/login', // redirect back to the signup page if there is an error
-    failureFlash : true // allow flash messages
-  }));
-
-
-  // =====================================
-  // SIGNUP ==============================
-  // =====================================
-  // show the signup form
-  app.get('/signup', function(req, res) {
-
-    // render the page and pass in any flash data if it exists
-    res.render('signup.ejs', { message: req.flash('signupMessage') });
-  });
-
-  // process the signup form
-  app.post('/signup', passport.authenticate('local-signup', {
-    successRedirect : '/profile', // redirect to the secure profile section
-    failureRedirect : '/signup', // redirect back to the signup page if there is an error
-    failureFlash : true // allow flash messages
-  }));
-
-  // =====================================
   // PROFILE SECTION =====================
   // =====================================
   // we will want this protected so you have to be logged in to visit
@@ -74,9 +39,6 @@ module.exports = function(app, passport) {
                 console.log("ERROR!");
             }
         });
-    
-        console.log(user.twitter.username);  
-        console.log(contributor); 
         res.redirect('/profile')
     });
  
@@ -100,8 +62,7 @@ module.exports = function(app, passport) {
       permissionCheck.findOne({
         'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
         'twitteruser.ownerusername': tweet_as_username 
-        }, function (err, permission){
-          console.log(permission);  
+        }, function (err, permission){  
             if (err){
                 dialog.info('ERROR! PERMISSION DENIED!');
                 console.log("ERROR! PERMISSION DENIED!");
