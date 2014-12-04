@@ -6,6 +6,7 @@ var TwitterStrategy = require('passport-twitter').Strategy;
 
 // load up the user model
 var User            = require('../app/models/user');
+var Permit      = require('../app/models/permission.js');
 
 //load the auth variables
 var configAuth = require('./auth');
@@ -73,9 +74,17 @@ module.exports = function(passport) {
           newUser.save(function(err) {
             if (err)
               throw err;
+          // add new person to permission so they can tweet as themself    
+          var newPermit            = new Permit();
+          newPermit.twitteruser.ownerusername = profile.username.toLowerCase();
+          newPermit.twitteruser.contributorusername = profile.username.toLowerCase();
+          newPermit.save(function(err) {
+            if (err)
+              throw err;
             return done(null, newUser);
+            }); 
           });
-        }
+            }
       });
 
     });

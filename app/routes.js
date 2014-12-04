@@ -90,7 +90,8 @@ module.exports = function(app, passport) {
                 , access_token:         user.twitter.token
                 , access_token_secret:  user.twitter.token_secret
                 })
-
+                
+                console.log(tweet);    
                 // COMMENT THIS OUT IF TESTING TO PREVENT TWEET SPAM
                 /*    
                 T.post('statuses/update', { status: tweet }, function(err, data, response) {
