@@ -65,7 +65,7 @@ module.exports = function(app, passport) {
     app.post('/add', function(req, res) {    
         var user = req.user;
         var permissionModel = require('./models/permission.js');
-        var contributor = req.body.contribute;
+        var contributor = req.body.contributor;
         var newPermission = new permissionModel();  
         newPermission.twitteruser.ownerusername = user.twitter.username;
         newPermission.twitteruser.contributorusername = contributor;  
@@ -81,38 +81,64 @@ module.exports = function(app, passport) {
     });
  
   // =====================================
-  // TWEET OUT ===========================
+  // TWEET FUNCTION ======================
   // =====================================   
 
   app.post('/tweet', function(req, res) {        
-    var tweet = req.body.username;
+    var tweet = req.body.tweet;
+    var tweet_as_username = req.body.tweet_as_username.toLowerCase();
     var configAuth = require('../config/auth');
     var user = req.user;
     var Twit = require('twit')
-    var userModel = require('./models/user.js');     
-    
+    var userModel = require('./models/user.js');
+    var permissionCheck = require('./models/permission.js');
       
-    /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME. TWEETS AS FETCHMYSCOPE */
-    userModel.findOne({ 'twitter.username': "FetchMyScope"}, function (err, user){
-        if (err){
-            console.log("ERROR!");
-        } else {
-                console.log(user);
-                var T = new Twit({
+  // =====================================
+  // CONTRIBUTOR CHECK ===================
+  // =====================================
+      permissionCheck.findOne({
+        'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
+        'twitteruser.ownerusername': tweet_as_username 
+        }, function (err, permission){
+            if (err){
+                console.log("ERROR! PERMISSION DENIED!");
+            } else {                    
+                console.log("You have permission!");
+                console.log(tweet_as_username);
+                console.log(user.twitter.username);
+                // =====================================
+                // TWEET OUT ===========================
+                // =====================================         
+      
+                /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET. WHOEVER GETS SELECTED TWEETS IN TWITTER.USERNAME. TWEETS AS FETCHMYSCOPE */
+                
+                
+                // TWEET_AS_USERNAME WILL TWEET BECUSE CASE SENSITIVE. MUST CHANGE THE FETCHMYTWEET IN MONGO TO CONTINUE TESTING
+                
+                userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
+                if (err){
+                    console.log("ERROR!");
+                } else {
+                    console.log(user);
+                    var T = new Twit({
                   consumer_key:          configAuth.twitterAuth.consumerKey 
-                , consumer_secret:      configAuth.twitterAuth.consumerSecret  
+                ,  consumer_secret:         configAuth.twitterAuth.consumerSecret  
                 , access_token:         user.twitter.token
                 , access_token_secret:  user.twitter.token_secret
                 })
 
+                /* REMOVE COMMENT TO TWEET OUT - PLACED TO PREVENT SPAM
                 console.log(T);
                 T.post('statuses/update', { status: tweet }, function(err, data, response) {
                 })
-                
+                */
                 
                 res.redirect('/profile')
-        }
-    });
+                }
+            });                
+            }
+        });
+      
   });
     
   // =====================================
