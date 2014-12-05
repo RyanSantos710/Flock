@@ -16,17 +16,39 @@
     <div class="page-header text-center">
         <h1><span class="fa fa-twitter"></span> Welcome to Flock, <%=user.twitter.displayName %>!</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>      
-    <form method="post" action="/tweet">
+    </div>
+    <p>Hello <strong><%= user.twitter.displayName %></strong>! Currently, you can tweet as...</p>
+    <ul>  
+      <% authorizedaccounts.forEach(function(i){%>    
+      <li><%= i.twitteruser.ownerusername %></li>
+      <% }); %>
+    </ul>
+    <br />  
+    <p>So who do you want to tweet as...?</p>   
+    <form method="post" action="/tweet">    
         <input type="text" class="form-control" placeholder="Tweet as Who?" name="tweet_as_username">
+    <br />    
+    <p>What do you want to tweet?</p>    
         <textarea class="form-control" rows="5" name="tweet" placeholder="Tweet out! (140 character max)"></textarea>
+        <br />
         <button type="submit" class="btn btn-primary registerButton">Tweet!</button>
     </form>
-      
+    <br />  
+    <p>Want to allow someone to tweet as you? Add their twitter handle here!</p>  
     <form method="post" action="/add">
         <input type="text" class="form-control" placeholder="Add a contributor to tweet as you" name="contributor">
+        <br />
         <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
-    </form>  
+    </form>   
 </div>
+<section id="footerBottom">
+  <div id="footer" class="col-md-12 col-sm-12 col-xs-12">
+        <footer>
+        <hr />
+		<p> © 2014 Ryan Santos and Phillip Wright</p>
+		</footer>
+  </div>
+</section>
+    
 </body>
 </html>

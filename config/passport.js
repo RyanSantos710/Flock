@@ -72,8 +72,9 @@ module.exports = function(passport) {
 
           // save our user into the database
           newUser.save(function(err) {
-            if (err)
+            if (err){
               throw err;
+            }
           // add new person to permission so they can tweet as themself    
           var newPermit            = new Permit();
           newPermit.twitteruser.ownerusername = profile.username.toLowerCase();
@@ -84,10 +85,8 @@ module.exports = function(passport) {
             return done(null, newUser);
             }); 
           });
-            }
+        }
       });
-
     });
-
   }));
 };

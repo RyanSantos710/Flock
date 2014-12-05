@@ -1,6 +1,6 @@
 // app/routes.js
 module.exports = function(app, passport) {
-
+var permissionCheck = require('./models/permission.js');
   // =====================================
   // HOME PAGE (with login links) ========
   // =====================================
@@ -12,10 +12,14 @@ module.exports = function(app, passport) {
   // PROFILE SECTION =====================
   // =====================================
   // we will want this protected so you have to be logged in to visit
-  // we will use route middleware to verify this (the isLoggedIn function)
+  // we will use route middleware to verify this (the isLoggedIn function)    
   app.get('/profile', isLoggedIn, function(req, res) {
-    res.render('profile.ejs', {
-      user : req.user // get the user out of session and pass to template
+    var user = req.user;  
+    permissionCheck.find({'twitteruser.contributorusername': user.twitter.username}, function (err, list){  
+    res.render('profile.ejs', {    
+      user : req.user, // get the user out of session and pass to template
+      authorizedaccounts: list
+        });
     });
   });   
     
@@ -27,7 +31,7 @@ module.exports = function(app, passport) {
   // ADD CONTRIBUTOR =====================
   // =====================================     
 
-    app.post('/add', function(req, res) {    
+    app.post('/add', function(req, res) {
         var user = req.user;
         var permissionModel = require('./models/permission.js');
         var contributor = req.body.contributor;
@@ -52,8 +56,7 @@ module.exports = function(app, passport) {
     var configAuth = require('../config/auth');
     var user = req.user;
     var Twit = require('twit')
-    var userModel = require('./models/user.js');
-    var permissionCheck = require('./models/permission.js'); 
+    var userModel = require('./models/user.js'); 
     var dialog = require('dialog');
       
   // =====================================
@@ -74,6 +77,16 @@ module.exports = function(app, passport) {
             } else {
                 dialog.info('Tweet successful!');
                 console.log("You have permission!");
+
+                // =====================================
+                // ATTEMPTING TO GET ARRAY =============
+                // =====================================         
+                
+      permissionCheck.find({'twitteruser.ownerusername': tweet_as_username}, function (err, list){
+            console.log(list);
+            console.log(list[0].twitteruser.contributorusername);
+      });        
+                
                 // =====================================
                 // TWEET OUT ===========================
                 // =====================================         
