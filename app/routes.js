@@ -1,6 +1,6 @@
 // app/routes.js
 module.exports = function(app, passport) {
-var permissionCheck = require('./models/permission.js');
+  var permissionCheck = require('./models/permission.js');
   // =====================================
   // HOME PAGE (with login links) ========
   // =====================================
@@ -16,108 +16,99 @@ var permissionCheck = require('./models/permission.js');
   app.get('/profile', isLoggedIn, function(req, res) {
     var user = req.user;  
     permissionCheck.find({'twitteruser.contributorusername': user.twitter.username}, function (err, list){  
-    res.render('profile.ejs', {    
-      user : req.user, // get the user out of session and pass to template
-      authorizedaccounts: list
-        });
+      res.render('profile.ejs', {    
+        user : req.user, // get the user out of session and pass to template
+        authorizedaccounts: list
+      });
     });
-  });   
-    
+  });       
+
   // =====================================
   // PROFILE-TWEET SECTION ===============
   // =====================================    
-    
+
   // =====================================
   // ADD CONTRIBUTOR =====================
   // =====================================     
 
-    app.post('/add', function(req, res) {
-        var user = req.user;
-        var permissionModel = require('./models/permission.js');
-        var contributor = req.body.contributor;
-        var newPermission = new permissionModel();  
-        newPermission.twitteruser.ownerusername = user.twitter.username;
-        newPermission.twitteruser.contributorusername = contributor;  
-        newPermission.save(function (err){
-            if (err){
-                console.log("ERROR!");
-            }
-        });
-        res.redirect('/profile')
+  app.post('/add', function(req, res) {
+    var user = req.user;
+    var permissionModel = require('./models/permission.js');
+    var contributor = req.body.contributor;
+    var newPermission = new permissionModel();  
+    newPermission.twitteruser.ownerusername = user.twitter.username;
+    newPermission.twitteruser.contributorusername = contributor;  
+    newPermission.save(function (err){
+      if (err){
+        console.log("ERROR!");
+      }
     });
- 
+    res.redirect('/profile')
+  });
+
   // =====================================
   // TWEET FUNCTION ======================
   // =====================================   
 
   app.post('/tweet', function(req, res) {        
     var tweet = req.body.tweet;
-    var tweet_as_username = req.body.tweet_as_username.toLowerCase();
+    var tweet_as_username = req.body.tweet_as_username//.toLowerCase();
     var configAuth = require('../config/auth');
     var user = req.user;
     var Twit = require('twit')
     var userModel = require('./models/user.js'); 
     var dialog = require('dialog');
-      
-  // =====================================
-  // CONTRIBUTOR CHECK ===================
-  // =====================================
-      permissionCheck.findOne({
-        'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
-        'twitteruser.ownerusername': tweet_as_username 
-        }, function (err, permission){  
-            if (err){
-                dialog.info('ERROR! PERMISSION DENIED!');
-                console.log("ERROR! PERMISSION DENIED!");
-                res.redirect('/profile');
-            } else if (permission == null){
-                dialog.info('ERROR! PERMISSION DENIED!');
-                console.log("ERROR! PERMISSION DENIED!");
-                res.redirect('/profile');
-            } else {
-                dialog.info('Tweet successful!');
-                console.log("You have permission!");
 
-                // =====================================
-                // ATTEMPTING TO GET ARRAY =============
-                // =====================================         
-                
-      permissionCheck.find({'twitteruser.ownerusername': tweet_as_username}, function (err, list){
-            console.log(list);
-            console.log(list[0].twitteruser.contributorusername);
-      });        
-                
-                // =====================================
-                // TWEET OUT ===========================
-                // =====================================         
-      
-                /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET.*/
-                
-                userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
-                if (err){
-                    console.log("ERROR!");
-                } else {
-                    var T = new Twit({
-                  consumer_key:          configAuth.twitterAuth.consumerKey 
-                ,  consumer_secret:         configAuth.twitterAuth.consumerSecret  
-                , access_token:         user.twitter.token
-                , access_token_secret:  user.twitter.token_secret
-                })
-                
-                console.log(tweet);    
-                // COMMENT THIS OUT IF TESTING TO PREVENT TWEET SPAM
-                /*    
-                T.post('statuses/update', { status: tweet }, function(err, data, response) {
-                })
-                */
-                res.redirect('/profile')
-                }
-            });                
-            }
-        });
-      
+    // =====================================
+    // CONTRIBUTOR CHECK ===================
+    // =====================================
+    permissionCheck.findOne({
+      'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
+      'twitteruser.ownerusername': tweet_as_username 
+    }, function (err, permission){  
+      if (err){
+        dialog.info('ERROR! PERMISSION DENIED!');
+        console.log("ERROR! PERMISSION DENIED!");
+        res.redirect('/profile');
+      } else if (permission == null){  
+        dialog.info('ERROR! PERMISSION DENIED!');
+        console.log("ERROR! PERMISSION DENIED!");
+        res.redirect('/profile');
+      } else {
+        dialog.info('Tweet successful!');
+        console.log("You have permission!");        
+
+        // =====================================
+        // TWEET OUT ===========================
+        // =====================================         
+
+        /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET.*/
+
+        userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
+          if (err){
+            console.log("ERROR!");
+          } else {
+            var T = new Twit({
+              consumer_key:          configAuth.twitterAuth.consumerKey 
+              ,  consumer_secret:         configAuth.twitterAuth.consumerSecret  
+              , access_token:         user.twitter.token
+              , access_token_secret:  user.twitter.token_secret
+            })
+
+            console.log(tweet);    
+            // COMMENT THIS OUT IF TESTING TO PREVENT TWEET SPAM
+            /*    
+                  T.post('statuses/update', { status: tweet }, function(err, data, response) {
+                  })
+                  */
+            res.redirect('/profile')
+          }
+        });                
+      }
+    });
+
   });
-    
+
   // =====================================
   // LOGOUT ==============================
   // =====================================
@@ -126,21 +117,21 @@ var permissionCheck = require('./models/permission.js');
     res.redirect('/');
   });
 
-// =====================================
-// TWITTER ROUTES ======================
-// =====================================
-// route for twitter authentication and login
-app.get('/auth/twitter', passport.authenticate('twitter'));
+  // =====================================
+  // TWITTER ROUTES ======================
+  // =====================================
+  // route for twitter authentication and login
+  app.get('/auth/twitter', passport.authenticate('twitter'));
 
-// handle the callback after twitter has authenticated the user
-app.get('/auth/twitter/callback',
-        passport.authenticate('twitter', {
-          successRedirect : '/profile',
-          failureRedirect : '/'
-      }));
+  // handle the callback after twitter has authenticated the user
+  app.get('/auth/twitter/callback',
+          passport.authenticate('twitter', {
+            successRedirect : '/profile',
+            failureRedirect : '/'
+          }));
 
 };
-                    
+
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
 

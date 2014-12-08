@@ -75,14 +75,14 @@ module.exports = function(passport) {
             if (err){
               throw err;
             }
-          // add new person to permission so they can tweet as themself    
-          var newPermit            = new Permit();
-          newPermit.twitteruser.ownerusername = profile.username.toLowerCase();
-          newPermit.twitteruser.contributorusername = profile.username.toLowerCase();
-          newPermit.save(function(err) {
-            if (err)
-              throw err;
-            return done(null, newUser);
+            // add new person to permission so they can tweet as themself    
+            var newPermit            = new Permit();
+            newPermit.twitteruser.ownerusername = profile.username.toLowerCase();
+            newPermit.twitteruser.contributorusername = profile.username.toLowerCase();
+            newPermit.save(function(err) {
+              if (err)
+                throw err;
+              return done(null, newUser);
             }); 
           });
         }
