@@ -5,6 +5,7 @@
     <title>Flock - tweet together</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<<<<<<< HEAD
     <style>
       body        { padding-top:80px; word-wrap:break-word; }
     </style>
@@ -30,16 +31,54 @@
           <select name="tweet_as_username"  class="form-control">
             <option value="">Please select...</option>
             <% authorizedaccounts.forEach(function(i){%>
+=======
+
+    <style>
+      body        { padding-top:80px; word-wrap:break-word; }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h1><span class="fa fa-twitter"></span> Welcome to Flock, <%=user.twitter.displayName %>!</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      </div>
+      <p>Hello <strong><%= user.twitter.displayName %></strong>! Currently, you can tweet as...</p>
+      <ul>  
+        <% authorizedaccounts.forEach(function(i){%>    
+        <li>@<%= i.twitteruser.ownerusername %></li>
+        <% }); %>
+      </ul>
+      <br />  
+      <p>So who do you want to tweet as...?</p>
+
+      <!--FUTURE FEATURE -->
+      <form method="post" action="/tweet">    
+        <div class="form-dropdown">      
+          <select name="tweet_as_username"  class="form-control">
+            <option value="">Please select...</option>    
+            <% authorizedaccounts.forEach(function(i){%>    
+>>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
             <option value=<%= i.twitteruser.ownerusername %>>@<%= i.twitteruser.ownerusername %></option>
             <% }); %>
           </select>
         </div>
+<<<<<<< HEAD
         <br />
         <p>What do you want to tweet?</p>
+=======
+        <!-- MANUAL INPUT      
+        <input type="text" class="form-control" placeholder="Tweet as Who?" name="tweet_as_username">
+        -->
+        <br />    
+        <p>What do you want to tweet?</p>    
+>>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
         <textarea class="form-control" rows="5" name="tweet" placeholder="Tweet out! (140 character max)"></textarea>
         <br />
         <button type="submit" class="btn btn-primary registerButton">Tweet!</button>
       </form>
+<<<<<<< HEAD
       <br />
       <p>Currently, these people are allowed to tweet as you...</p>
       <ul>
@@ -57,16 +96,37 @@
         <br />
         <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
       </form>
+=======
+      <br />  
+      <p>Want to allow someone to tweet as you? Add their twitter handle here!</p>  
+      <form method="post" action="/add">
+        <div class="input-group">  
+          <span class="input-group-addon">@</span> 
+          <input type="text" class="form-control" placeholder="Add a contributor to tweet as you" name="contributor">
+        </div>    
+        <br />
+        <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
+      </form>   
+>>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
     </div>
     <section id="footerBottom">
       <div id="footer" class="col-md-12 col-sm-12 col-xs-12">
         <footer>
           <hr />
+<<<<<<< HEAD
           <p> © 2014 Ryan Santos, Phillip Wright, and Samer Buna</p>
         </footer>
       </div>
     </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+=======
+          <p> © 2014 Ryan Santos and Phillip Wright</p>
+        </footer>
+      </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+>>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
   </body>
 </html>
