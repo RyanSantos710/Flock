@@ -41,7 +41,6 @@ module.exports = function(app, passport) {
   // we will want this protected so you have to be logged in to visit
   // we will use route middleware to verify this (the isLoggedIn function)
   app.get('/profile', isLoggedIn, function(req, res) {
-<<<<<<< HEAD
     var user = req.user;
 
     Q.all([fetchAuthorizedAccounts(user.twitter.username), fetchContributorAccounts(user.twitter.username)]).then( function(lists) {
@@ -63,38 +62,13 @@ module.exports = function(app, passport) {
   // =====================================
   // ADD CONTRIBUTOR =====================
   // =====================================
-=======
-    var user = req.user;  
-    permissionCheck.find({'twitteruser.contributorusername': user.twitter.username}, function (err, list){  
-      res.render('profile.ejs', {    
-        user : req.user, // get the user out of session and pass to template
-        authorizedaccounts: list
-      });
-    });
-  });       
-
-  // =====================================
-  // PROFILE-TWEET SECTION ===============
-  // =====================================    
-
-  // =====================================
-  // ADD CONTRIBUTOR =====================
-  // =====================================     
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
-
   app.post('/add', function(req, res) {
     var user = req.user;
     var permissionModel = require('./models/permission.js');
     var contributor = req.body.contributor;
-<<<<<<< HEAD
     var newPermission = new permissionModel();
     newPermission.twitteruser.ownerusername = user.twitter.username;
     newPermission.twitteruser.contributorusername = contributor;
-=======
-    var newPermission = new permissionModel();  
-    newPermission.twitteruser.ownerusername = user.twitter.username;
-    newPermission.twitteruser.contributorusername = contributor;  
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
     newPermission.save(function (err){
       if (err){
         console.log("ERROR!");
@@ -121,41 +95,24 @@ module.exports = function(app, passport) {
     // =====================================
     permissionCheck.findOne({
       'twitteruser.contributorusername':   user.twitter.username.toLowerCase(),
-<<<<<<< HEAD
       'twitteruser.ownerusername': tweet_as_username
     }, function (err, permission){
-=======
-      'twitteruser.ownerusername': tweet_as_username 
-    }, function (err, permission){  
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
       if (err){
         dialog.info('ERROR! PERMISSION DENIED!');
         console.log("ERROR! PERMISSION DENIED!");
         res.redirect('/profile');
-<<<<<<< HEAD
       } else if (permission == null){
-=======
-      } else if (permission == null){  
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
         dialog.info('ERROR! PERMISSION DENIED!');
         console.log("ERROR! PERMISSION DENIED!");
         res.redirect('/profile');
       } else {
         dialog.info('Tweet successful!');
-<<<<<<< HEAD
         console.log("You have permission!");
 
         // =====================================
         // TWEET OUT ===========================
         // =====================================
-=======
-        console.log("You have permission!");        
-
-        // =====================================
-        // TWEET OUT ===========================
-        // =====================================         
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
-
+          
         /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET.*/
 
         userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
@@ -163,18 +120,12 @@ module.exports = function(app, passport) {
             console.log("ERROR!");
           } else {
             var T = new Twit({
-<<<<<<< HEAD
               consumer_key:          configAuth.twitterAuth.consumerKey
               ,  consumer_secret:         configAuth.twitterAuth.consumerSecret
-=======
-              consumer_key:          configAuth.twitterAuth.consumerKey 
-              ,  consumer_secret:         configAuth.twitterAuth.consumerSecret  
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
               , access_token:         user.twitter.token
               , access_token_secret:  user.twitter.token_secret
             })
 
-<<<<<<< HEAD
             console.log(tweet);
                T.post('statuses/update', { status: tweet }, function(err, data, response) {
                })
@@ -219,52 +170,3 @@ module.exports = function(app, passport) {
             // if they aren't redirect them to the home page
             res.redirect('/');
           }
-=======
-            console.log(tweet);    
-            // COMMENT THIS OUT IF TESTING TO PREVENT TWEET SPAM
-            /*    
-                  T.post('statuses/update', { status: tweet }, function(err, data, response) {
-                  })
-                  */
-            res.redirect('/profile')
-          }
-        });                
-      }
-    });
-
-  });
-
-  // =====================================
-  // LOGOUT ==============================
-  // =====================================
-  app.get('/logout', function(req, res) {
-    req.logout();
-    res.redirect('/');
-  });
-
-  // =====================================
-  // TWITTER ROUTES ======================
-  // =====================================
-  // route for twitter authentication and login
-  app.get('/auth/twitter', passport.authenticate('twitter'));
-
-  // handle the callback after twitter has authenticated the user
-  app.get('/auth/twitter/callback',
-          passport.authenticate('twitter', {
-            successRedirect : '/profile',
-            failureRedirect : '/'
-          }));
-
-};
-
-// route middleware to make sure a user is logged in
-function isLoggedIn(req, res, next) {
-
-  // if user is authenticated in the session, carry on 
-  if (req.isAuthenticated())
-    return next();
-
-  // if they aren't redirect them to the home page
-  res.redirect('/');
-}
->>>>>>> c77f9dfdd6c995c171137cbf047499e4ff90e91f
