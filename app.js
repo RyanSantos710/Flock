@@ -1,30 +1,42 @@
 /**
  * Created by phillipwright on 11/26/14.
  */
-angular.module('myApp', [])
-    .controller('NameController', ['$scope', function($scope) {
-        $scope.names = [
-            {text:'?**?', done:true},
-            {text:'(#)|(#)', done:false}];
+angular.module('myApp',  ['ngRoute'])
 
-        $scope.addName = function() {
-            $scope.names.push({text:$scope.nameText, done:false});
-            $scope.nameText = '';
-        };
 
-        $scope.remaining = function() {
-            var count = 0;
-            angular.forEach($scope.names, function(name) {
-                count += name.done ? 0 : 1;
-            });
-            return count;
-        };
+    myApp.config(function($routProvider){
+        $routProvider
 
-        $scope.archive = function() {
-            var oldnames = $scope.names;
-            $scope.names = [];
-            angular.forEach(oldNames, function(name) {
-                if (!name.done) $scope.names.push(name);
-            });
-        };
+        .when('/',{
+
+            templatem.Url : 'profile.ejs',
+            controller : 'homeController'
+        })
+
+
+        .when('/profile',{
+
+            templatem.Url : 'profile.ejs',
+            controller : 'profileController'
+        })
+
+        .when('/login',{
+
+            templatem.Url : 'profile.ejs',
+            controller : 'loginController'
+        })    
+
+            .when('/tweets',{
+
+            templatem.Url : 'profile.ejs',
+            controller : 'tweetController'
+        })
+    })
+    myApp.controller('NameController', ['$scope', function($scope) {
+       
+       }]);
+
+    myApp.controller('HomeController', ['$scope', function($scope){
+
+        }]);
     }]);

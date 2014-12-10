@@ -2,53 +2,75 @@
 <!doctype html>
 <html>
 <head>
-  <title>Flock - tweet together</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-
-  <style>
-    body        { padding-top:80px; word-wrap:break-word; }
-  </style>
+    <title>Flock - tweet togetFher</title>
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <div class="container">
-    <div class="page-header text-center">
-        <h1><span class="fa fa-twitter"></span> Welcome to Flock, <%=user.twitter.displayName %>!</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+<body ng-app="" >
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <img src="../app/assets/images/FlockLogo.jpg">
+        <a href="/logout" class="btn btn-default btn-sm pull-right btn-blue" >Logout</a>
+    </div.
+</nav>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">tweet.ejs</a></li>
+  <li role="presentation"><a href="#">collanborators.ejs</a></li>
+</ul>
+
+
+<div class="container app-container profile-box">
+
+    <div class="page-header text-center speach-bubble" >
+        <h1 class="main-heading"><span class="fa fa-twitter"></span> Tweet!</h1>
+
     </div>
-    <p>Hello <strong><%= user.twitter.displayName %></strong>! Currently, you can tweet as...</p>
-    <ul>  
-      <% authorizedaccounts.forEach(function(i){%>    
-      <li><%= i.twitteruser.ownerusername %></li>
-      <% }); %>
-    </ul>
-    <br />  
-    <p>So who do you want to tweet as...?</p>   
-    <form method="post" action="/tweet">    
-        <input type="text" class="form-control" placeholder="Tweet as Who?" name="tweet_as_username">
-    <br />    
-    <p>What do you want to tweet?</p>    
-        <textarea class="form-control" rows="5" name="tweet" placeholder="Tweet out! (140 character max)"></textarea>
-        <br />
-        <button type="submit" class="btn btn-primary registerButton">Tweet!</button>
-    </form>
-    <br />  
-    <p>Want to allow someone to tweet as you? Add their twitter handle here!</p>  
-    <form method="post" action="/add">
-        <input type="text" class="form-control" placeholder="Add a contributor to tweet as you" name="contributor">
-        <br />
-        <button type="submit" class="btn btn-primary registerButton">Add Contributor!</button>
-    </form>   
+
+    <br />
+    <div class="profile-form col-md-offset-4"  >
+        <table ng-model="" class=" pull-left">
+            <thead>
+            <tr>
+                <th data-field="id">{{ tweetables }}</th>
+            </tr>
+            </thead>
+        </table>
+        <form method="post" action="/tweet">
+            <br />
+            <div class="well container col-md-3"><h3>Tweeting as: {{ tweetables ! }} </h3></div>
+            <textarea class="form-control" rows="5" maxlength="140" ng-model="test" name="tweet" ng-trim="false"  placeholder="Tweet out! (140 character max)"></textarea>
+            <p class="pull-right tweet-counter "> {{ 140 - test.length }}</p>
+            <br/>
+            <button type="submit" class="btn btn-primary pull-left registerButton">Tweet!</button>
+        </form>
+        <br/>
+        <div class="modal-tweet-form-container"></div>
+        <br/>
+
+    </div>
 </div>
 <section id="footerBottom">
-  <div id="footer" class="col-md-12 col-sm-12 col-xs-12">
+    <div id="footer" class="col-md-12 col-sm-12 col-xs-12">
         <footer>
-        <hr />
-		<p> © 2014 Ryan Santos and Phillip Wright</p>
-		</footer>
-  </div>
+            <hr />
+            <p> © 2014 Ryan Santos and Phillip Wright</p>
+        </footer>
+    </div>
 </section>
-    
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+<script src="../app/assets/ui.js"></script>
 </body>
 </html>

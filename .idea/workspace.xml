@@ -1,7 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2be6ba97-f1de-4e1f-b1bc-443049afc3dd" name="Default" comment="" />
+    <list default="true" id="2be6ba97-f1de-4e1f-b1bc-443049afc3dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/FlockLogo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/profile.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/dist/underscore.string.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/strings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/strings_standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_standalone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/Release/.deps/Release/obj.target/kerberos/lib/kerberos.o.d.raw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/dist/underscore.string.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/strings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/strings_standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_standalone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/login.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/profile.ejs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app/assets/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Flock.iml" afterPath="$PROJECT_DIR$/.idea/Flock.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/binding.Makefile" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/binding.Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/binding.Makefile" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/binding.Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/obj.target/bson/ext/bson.o" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/obj.target/bson/ext/bson.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/bson.target.mk" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/bson.target.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/bufferutil.node" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/bufferutil.node" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/config.gypi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/Release/fse.node" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/Release/fse.node" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/kerberos.target.mk" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/kerberos.target.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/validation.node" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/validation.node" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/LICENSE.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/LICENSE" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/LICENSE" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/README.markdown" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/README.markdown" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/README.md" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/README.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/README.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/README.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/README.md" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/.deps/Release/obj.target/bson/ext/bson.o.d" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/.deps/Release/obj.target/bson/ext/bson.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/builderror.log" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/builderror.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/builderror.log" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/builderror.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/changed-since.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/changed-since.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/config/checkWatchSupport.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/checkWatchSupport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/component.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/component.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/fsevents/build/config.gypi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/config.gypi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/config.gypi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/db.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/db.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/config/exec.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/exec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/help/formatter.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/help/formatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/help/formatter.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/help/formatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/graceful-fs/fs.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/graceful-fs/fs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/caseless/index.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/caseless/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/bin/nodemon.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/bin/nodemon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/nodemon.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/nodemon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notify.html" afterPath="$PROJECT_DIR$/notify.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/node_modules/string_decoder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/package.json" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/package.json" afterPath="$PROJECT_DIR$/node_modules/express/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-session/package.json" afterPath="$PROJECT_DIR$/node_modules/express-session/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/buffer-crc32/package.json" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/buffer-crc32/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/package.json" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid2/package.json" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/negotiator/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/negotiator/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/cookie-signature/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/cookie-signature/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/escape-html/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/escape-html/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/parseurl/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/parseurl/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/path-to-regexp/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/path-to-regexp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/colors/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/colors/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/compression/node_modules/compressible/node_modules/mime-db/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/connect-timeout/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/connect-timeout/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/debug/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/errorhandler/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/errorhandler/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/errorhandler/node_modules/escape-html/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/errorhandler/node_modules/escape-html/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/finalhandler/node_modules/escape-html/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/finalhandler/node_modules/escape-html/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/multiparty/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/multiparty/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-favicon/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-favicon/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-static/node_modules/escape-html/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-static/node_modules/escape-html/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/graceful-fs/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/graceful-fs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/async/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/semver/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/minimatch/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/optimist/node_modules/minimist/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/optimist/node_modules/minimist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/q/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/q/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/package.json" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/method-override/package.json" afterPath="$PROJECT_DIR$/node_modules/method-override/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/method-override/node_modules/methods/package.json" afterPath="$PROJECT_DIR$/node_modules/method-override/node_modules/methods/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mquery/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/morgan/package.json" afterPath="$PROJECT_DIR$/node_modules/morgan/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/morgan/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/morgan/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/node_modules/lru-cache/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/node_modules/sigmund/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/node_modules/event-stream/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/node_modules/event-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/node_modules/event-stream/node_modules/optimist/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/ps-tree/node_modules/event-stream/node_modules/optimist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/ansi-styles/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/ansi-styles/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-color/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-color/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/strip-ansi/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/strip-ansi/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/graceful-fs/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/graceful-fs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/esprima/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/esprima/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/mkdirp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/object-assign/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/object-assign/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/osenv/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/osenv/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/uuid/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/uuid/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/aws-sign2/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/aws-sign2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/core-util-is/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/inherits/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/bl/node_modules/readable-stream/node_modules/string_decoder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/caseless/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/caseless/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/combined-stream/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/combined-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/forever-agent/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/forever-agent/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/node_modules/async/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/form-data/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/boom/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/boom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/hoek/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/hawk/node_modules/sntp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/http-signature/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/http-signature/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/json-stringify-safe/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/json-stringify-safe/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/mime-types/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/oauth-sign/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/oauth-sign/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/stringstream/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/stringstream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/tunnel-agent/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/tunnel-agent/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/semver/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/passport-oauth/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/passport-oauth/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/passport-oauth/node_modules/oauth/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/passport-oauth/node_modules/oauth/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-google-oauth/node_modules/pkginfo/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-local/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-local/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-local/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/pkginfo/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/cli/parse.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/cli/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/query.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/readdirp.js" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/readdirp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/test/readdirp.js" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/readdirp/test/readdirp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/request.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore-min.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore-min.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/lib/underscore.string.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/lib/underscore.string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/lib/underscore.string.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/lib/underscore.string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/uuid.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/update-notifier/node_modules/request/node_modules/node-uuid/uuid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/which.js" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/which.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Flock.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,39 +309,84 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="profile.html" pinned="false" current="true" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/views/profile.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.27538726" vertical-offset="320" max-vertical-offset="1440">
+                    <caret line="24" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="notify.html" pinned="false" current="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/notify.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="-17.64" vertical-offset="279" max-vertical-offset="860">
+                    <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Flock" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="notify.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notify.html">
+      <file leaf-file-name="FlockLogo.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/images/FlockLogo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="840">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.9318569" vertical-offset="33" max-vertical-offset="700">
+              <caret line="29" column="8" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76149917" vertical-offset="73" max-vertical-offset="660">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#48#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="600">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.css">
+        <entry file="file://$PROJECT_DIR$/app/assets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2500" max-vertical-offset="2640">
+              <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animate.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/animate.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="63260">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,15 +405,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.css" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/notify.html" />
+        <option value="$PROJECT_DIR$/public/profile.ejs" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/app.css" />
+        <option value="$PROJECT_DIR$/app/assets/app.css" />
+        <option value="$PROJECT_DIR$/views/profile.ejs" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/app/assets/login.html" />
+        <option value="$PROJECT_DIR$/app/assets/app.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/app/assets/images/login.html" />
+        <option value="$PROJECT_DIR$/views/login.html" />
+        <option value="$PROJECT_DIR$/views/profile.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
+    <option name="width" value="1280" />
     <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -105,6 +453,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -123,14 +472,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -169,27 +594,46 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="705" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="705" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1810961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12195122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12195122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1810961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -211,25 +655,137 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/notify.html">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/FlockLogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="840">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="700">
+          <caret line="29" column="8" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="660">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="600">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.css">
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2500" max-vertical-offset="2640">
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="63260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/FlockLogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="700">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="600">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2500" max-vertical-offset="2640">
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1840">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="700">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="260">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="700">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="660">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
@@ -239,27 +795,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="840">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="840">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.css">
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="660">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76149917" vertical-offset="73" max-vertical-offset="660">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="1080">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="63260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/FlockLogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1953" max-vertical-offset="2640">
+          <caret line="125" column="1" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9318569" vertical-offset="33" max-vertical-offset="700">
+          <caret line="29" column="8" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="600">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.64" vertical-offset="279" max-vertical-offset="860">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27538726" vertical-offset="320" max-vertical-offset="1440">
+          <caret line="24" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
