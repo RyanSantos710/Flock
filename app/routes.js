@@ -12,13 +12,14 @@ module.exports = function(app, passport) {
     res.render('index.ejs'); // load the index.ejs file
   });
 
+  // =====================================
+  // LOADING AUTH/CONTRIB LIST ===========
+  // =====================================
   function fetchAccounts(username, mongoKey) {
     var deferred = Q.defer();
     var conditions = {};
     conditions['twitteruser.' + mongoKey] = username;
-    console.log(conditions);
     permissionCheck.find(conditions, function (err, list){
-      console.log(list);
       if (err) {
         deferred.reject(err);
       }
@@ -43,6 +44,7 @@ module.exports = function(app, passport) {
   app.get('/profile', isLoggedIn, function(req, res) {
     var user = req.user;
 
+    //Adding the two list to the profile page
     Q.all([fetchAuthorizedAccounts(user.twitter.username), fetchContributorAccounts(user.twitter.username)]).then( function(lists) {
       res.render('profile.ejs', {
         user : req.user,
@@ -80,7 +82,6 @@ module.exports = function(app, passport) {
   // =====================================
   // TWEET FUNCTION ======================
   // =====================================
-
   app.post('/tweet', function(req, res) {
     var tweet = req.body.tweet;
     var tweet_as_username = req.body.tweet_as_username//.toLowerCase();
@@ -112,61 +113,60 @@ module.exports = function(app, passport) {
         // =====================================
         // TWEET OUT ===========================
         // =====================================
-          
-        /* THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET.*/
 
+        // THIS GRABS INFORMATION FROM MONGO AND THEN IT TAKES THE  ACCESS KEYS/SECRETS AND ASSINGS THEM TO THE TWEET
         userModel.findOne({ 'twitter.username': tweet_as_username }, function (err, user){
           if (err){
             console.log("ERROR!");
           } else {
             var T = new Twit({
               consumer_key:          configAuth.twitterAuth.consumerKey
-              ,  consumer_secret:         configAuth.twitterAuth.consumerSecret
-              , access_token:         user.twitter.token
-              , access_token_secret:  user.twitter.token_secret
+              ,  consumer_secret:    configAuth.twitterAuth.consumerSecret
+              , access_token:        user.twitter.token
+              , access_token_secret: user.twitter.token_secret
             })
 
             console.log(tweet);
-               T.post('statuses/update', { status: tweet }, function(err, data, response) {
-               })
+            T.post('statuses/update', { status: tweet }, function(err, data, response) {
+            })
             res.redirect('/profile')
-            }
-            });
+          }
+        });
       }
     });
 
-          });
+  });
 
-            // =====================================
-            // LOGOUT ==============================
-            // =====================================
-            app.get('/logout', function(req, res) {
-              req.logout();
-              res.redirect('/');
-            });
+  // =====================================
+  // LOGOUT ==============================
+  // =====================================
+  app.get('/logout', function(req, res) {
+    req.logout();
+    res.redirect('/');
+  });
 
-            // =====================================
-            // TWITTER ROUTES ======================
-            // =====================================
-            // route for twitter authentication and login
-            app.get('/auth/twitter', passport.authenticate('twitter'));
+  // =====================================
+  // TWITTER ROUTES ======================
+  // =====================================
+  // route for twitter authentication and login
+  app.get('/auth/twitter', passport.authenticate('twitter'));
 
-            // handle the callback after twitter has authenticated the user
-            app.get('/auth/twitter/callback',
-                    passport.authenticate('twitter', {
-                      successRedirect : '/profile',
-                      failureRedirect : '/'
-                    }));
+  // handle the callback after twitter has authenticated the user
+  app.get('/auth/twitter/callback',
+          passport.authenticate('twitter', {
+            successRedirect : '/profile',
+            failureRedirect : '/'
+          }));
 
-          };
+};
 
-          // route middleware to make sure a user is logged in
-          function isLoggedIn(req, res, next) {
+// route middleware to make sure a user is logged in
+function isLoggedIn(req, res, next) {
 
-            // if user is authenticated in the session, carry on
-            if (req.isAuthenticated())
-              return next();
+  // if user is authenticated in the session, carry on
+  if (req.isAuthenticated())
+    return next();
 
-            // if they aren't redirect them to the home page
-            res.redirect('/');
-          }
+  // if they aren't redirect them to the home page
+  res.redirect('/');
+}
